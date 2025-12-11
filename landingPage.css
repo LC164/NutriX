@@ -1,0 +1,146 @@
+/* Color Palette (Reusable from Chatbot Style) */
+:root {
+    --primary-green: #179178; 
+    --background-light: #f5f8fa;
+    --shadow-light: rgba(0, 0, 0, 0.05);
+    --text-dark: #333;
+    --text-medium: #666;
+    --border-color: #e0e0e0;
+}
+
+/* Basic Reset and Background Setup */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: radial-gradient(circle at center, #ffffff 0%, var(--background-light) 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    color: var(--text-dark);
+}
+
+/* Landing Page Container */
+#landing-page {
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 30px;
+}
+
+/* --- Header/Identity Styling (Reusing Chatbot Styles) --- */
+
+.landing-header {
+    margin-bottom: 40px;
+}
+
+.bot-avatar-container {
+    margin-bottom: 15px;
+}
+
+.bot-avatar {
+    width: 60px; /* Slightly larger avatar */
+    height: 60px;
+    background-color: #333;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    box-shadow: 0 4px 12px var(--shadow-light);
+}
+
+.bot-avatar i {
+    color: white;
+    font-size: 24px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 700;
+    margin: 10px 0 5px 0;
+}
+
+.emoji {
+    font-size: 32px;
+}
+
+.tagline {
+    color: var(--text-medium);
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 10px;
+}
+
+/* --- Features Section Styling --- */
+
+.features-container {
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 40px;
+}
+
+.features-container h3 {
+    font-size: 24px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    color: var(--text-dark);
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    margin-bottom: 25px;
+    padding: 15px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px var(--shadow-light);
+}
+
+.feature-item i {
+    font-size: 28px;
+    color: var(--primary-green);
+    margin-right: 15px;
+    padding-top: 5px;
+}
+
+.feature-text h4 {
+    font-size: 18px;
+    margin: 0 0 5px 0;
+    font-weight: 600;
+}
+
+.feature-text p {
+    font-size: 15px;
+    color: var(--text-medium);
+    margin: 0;
+}
+
+/* --- Call to Action Button --- */
+
+.cta-button {
+    background-color: var(--primary-green);
+    color: white;
+    border: none;
+    border-radius: 30px;
+    padding: 15px 35px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0 4px 15px #179178;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+.cta-button i {
+    margin-left: 8px;
+}
+
+.cta-button:hover {
+    background-color: #106b57;
+    transform: translateY(-1px);
+}
